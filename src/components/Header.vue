@@ -40,7 +40,7 @@
           </div>
         </div>
       </nav>
-      <div class="flex-auto flex flex-col justify-center items-start p-12">
+      <div class="flex-auto flex flex-col justify-center items-center md:items-start p-12">
         <h1>{{ title }}</h1>
         <span> {{ subtitle }} </span>
         <div class="w-100 md:w-2/5 sm:w-4/5 sm:self-center md:self-start bg-white my-2 sm:my-4 md:my-6 lg:my-8 px-5 pt-5 shadow sm:shadow-md md:shadow-lg rounded">
@@ -81,9 +81,9 @@
             </div>
           </div>
         </div>
-        <span class="span-icon relative">
+        <div class="span-icon w-full pt-5 sm:pt-10">
           <Icon type="ios-arrow-down" size="32" />
-        </span>
+        </div>
       </div>
     </div>
   </div>
@@ -119,7 +119,7 @@ export default {
 
   .span-icon {
     top: 60px;
-    left: calc(100%/2);
+    left: calc(50%);
   }
 }
 </style>

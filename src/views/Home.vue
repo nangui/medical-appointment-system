@@ -7,6 +7,11 @@
     <service/>
     <slider/>
     <take-care-of-your-child/>
+    <virtual-tour-at-our-office/>
+    <pregnancy-with/>
+    <video-section/>
+    <about-doctor/>
+    <testimonials/>
   </div>
 </template>
 
@@ -16,6 +21,11 @@ import About from '@/components/About.vue'
 import Service from '@/components/Service.vue'
 import Slider from '@/components/Slider.vue'
 import TakeCareOfYourChild from '@/components/services/TakeCareOfYourChild.vue'
+import VirtualTourAtOurOffice from '@/components/services/VirtualTourAtOurOffice.vue'
+import PregnancyWith from '@/components/services/PregnancyWith.vue'
+import VideoSection from '@/components/VideoSection.vue'
+import AboutDoctor from '@/components/AboutDoctor.vue'
+import Testimonials from '@/components/Testimonials.vue'
 
 export default {
   name: 'home',
@@ -24,7 +34,12 @@ export default {
     About,
     Service,
     Slider,
-    TakeCareOfYourChild
+    TakeCareOfYourChild,
+    VirtualTourAtOurOffice,
+    PregnancyWith,
+    VideoSection,
+    AboutDoctor,
+    Testimonials
   }
 }
 </script>

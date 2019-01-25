@@ -59,7 +59,7 @@ export default {
     }
   },
   computed: {
-    swiper() {
+    swiper () {
       return this.$refs.mySwiper.swiper
     }
   },
@@ -67,14 +67,14 @@ export default {
     this.swiper.slideTo(this.index, 1000, false)
   },
   methods: {
-    callback() {},
-    slidePrev() {
-      (this.index == 0) ? this.index = this.index : this.index--;
-      this.swiper.slideTo(this.index, 1000, false);
+    callback () {},
+    slidePrev () {
+      (this.index === 0) ? this.index = this.index : this.index--
+      this.swiper.slideTo(this.index, 1000, false)
     },
-    slideNext() {
-      (this.index == 3) ? this.index = this.index : this.index++;
-      this.swiper.slideTo(this.index, 1000, false);
+    slideNext () {
+      (this.index === 3) ? this.index = this.index : this.index++
+      this.swiper.slideTo(this.index, 1000, false)
     }
   }
 }
