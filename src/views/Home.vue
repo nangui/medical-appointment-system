@@ -12,6 +12,13 @@
     <video-section/>
     <about-doctor/>
     <testimonials/>
+    <training/>
+    <contact/>
+    <BackTop>
+      <div class="bg-indigo rounded text-center text-white">
+        <i class="zmdi zmdi-long-arrow-up"></i>
+      </div>
+    </BackTop>
   </div>
 </template>
 
@@ -26,6 +33,8 @@ import PregnancyWith from '@/components/services/PregnancyWith.vue'
 import VideoSection from '@/components/VideoSection.vue'
 import AboutDoctor from '@/components/AboutDoctor.vue'
 import Testimonials from '@/components/Testimonials.vue'
+import Training from '@/components/Training.vue'
+import Contact from '@/components/Contact.vue'
 
 export default {
   name: 'home',
@@ -39,7 +48,9 @@ export default {
     PregnancyWith,
     VideoSection,
     AboutDoctor,
-    Testimonials
+    Testimonials,
+    Training,
+    Contact
   }
 }
 </script>

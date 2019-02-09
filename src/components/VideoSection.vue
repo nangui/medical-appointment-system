@@ -81,6 +81,7 @@ export default {
       background-image: -webkit-radial-gradient( 50% 50%, circle closest-side, rgba(59,60,62,0.87843) 0%, rgba(59,60,62,0.88) 0%, rgba(47,50,59,0.94) 47%, rgb(35,40,56) 100%);
       background-image: -ms-radial-gradient( 50% 50%, circle closest-side, rgba(59,60,62,0.87843) 0%, rgba(59,60,62,0.88) 0%, rgba(47,50,59,0.94) 47%, rgb(35,40,56) 100%);
       opacity: .93;
+      filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=93)";
       -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=93)";
     }
 
