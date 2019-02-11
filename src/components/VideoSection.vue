@@ -1,12 +1,12 @@
 <template>
   <div id="video-section" class="c-video-section"
-  :style="{ 'background-image': `url(${  require('@/assets/'+bgImage) })` }">
+    :style="{ 'background-image': `url(${  require('@/assets/'+bgImage) })` }">
     <div class="c-video-section-inner h-full">
       <div class="container mx-auto h-full">
         <div class="h-full flex flex-col justify-center items-center">
           <div class="content-inner text-center">
             <div class="video-content text-center">
-              <a href="#" class="popup-video block">
+              <a href="https://www.youtube.com/watch?v=4PS0RS5ppgg" class="popup-video block">
                 <i class="zmdi zmdi-play-circle-outline zmdi-hc-fw"></i>
               </a>
               <small class="inline-block uppercase text-grey">Watch this video</small>
@@ -20,6 +20,10 @@
 </template>
 
 <script>
+import JQuery from 'jquery'
+let $ = JQuery
+require('magnific-popup')
+
 export default {
   props: {
     bgImage: {
@@ -30,7 +34,24 @@ export default {
   },
   data () {
     return {
-
+      magnificPopupOptions: {
+        disableOn: 700,
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: true,
+        fixedContentPos: false
+      }
+    }
+  },
+  mounted () {
+    this.loadPopupVideo()
+  },
+  methods: {
+    loadPopupVideo () {
+      if ($('.popup-video').length > 0) {
+        $('.popup-video').magnificPopup(this.magnificPopupOptions)
+      }
     }
   }
 }
@@ -115,6 +136,38 @@ export default {
       }
     }
   }
+}
+
+// Magific Custom css
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 }
 
 @media (min-width: 576px) {

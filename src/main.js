@@ -6,6 +6,7 @@ import iView from 'iview'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'iview/dist/styles/iview.css'
 import 'swiper/dist/css/swiper.css'
+import 'magnific-popup/dist/magnific-popup.css'
 
 Vue.config.productionTip = false
 

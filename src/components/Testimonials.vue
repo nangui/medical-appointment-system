@@ -23,10 +23,10 @@ export default {
       index: 0,
       swiperOption: {
         spaceBetween: 30,
-          autoplay: {
-            delay: 2500,
-            disableOnInteraction: false
-          },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false
+        },
         pagination: {
           el: '.swiper-pagination',
           dynamicBullets: true,
@@ -56,7 +56,8 @@ export default {
           Eos dico ornatus disputationi ei.`,
           name: 'Nelly ILIMBOU'
         },
-        { words: `Oporteat sententiae eum te, exerci delectus dissentias te vim.
+        {
+          words: `Oporteat sententiae eum te, exerci delectus dissentias te vim.
           Sea zril gloriatur et, vis apeirian volutpat no. Debet discere rationibus sea ei,
           ex soleat suscipiantur eam. Enim integre fierent sit ut. Ex agam dicam eos,
           vivendo appareat nam et. Eius possit et quo, eam alterum appetere placerat cu.
