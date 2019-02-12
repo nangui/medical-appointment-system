@@ -11,31 +11,34 @@
             <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
           </button>
         </div>
-        <div :class="open ? 'block': 'hidden'" class="w-full flex-grow lg:flex lg:items-center lg:w-auto">
+        <div :class="open ? 'block': 'hidden'"
+          class="band w-full flex-grow lg:flex lg:items-center lg:w-auto z-50">
           <div class="text-sm lg:flex-grow">
-            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4">
+            <a href="#responsive-header"
+              class="block mt-4 lg:inline-block lg:mt-0 mr-4 text-white hover:text-grey">
               About
             </a>
-            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4">
+            <a href="#responsive-header"
+              class="block mt-4 lg:inline-block lg:mt-0 mr-4 text-white hover:text-grey">
               Services
             </a>
-            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4">
+            <a href="#responsive-header"
+              class="block mt-4 lg:inline-block lg:mt-0 mr-4 text-white hover:text-grey">
               Insurance
             </a>
-            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4">
+            <a href="#responsive-header"
+              class="block mt-4 lg:inline-block lg:mt-0 mr-4 text-white hover:text-grey">
               Testimonials
             </a>
-            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4">
+            <a href="#responsive-header"
+              class="block mt-4 lg:inline-block lg:mt-0 mr-4 text-white hover:text-grey">
               Contact
-            </a>
-            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white">
-              Location
             </a>
           </div>
           <div>
             <a href="#"
-            class="inline-block text-sm px-4 py-2 leading-none border
-            rounded hover:border-white border-transparent
+            class="btn-book inline-block text-sm px-4 py-2 leading-none border
+            rounded hover:border-white
             text-indigo hover:text-white bg-white hover:bg-transparent mt-4 lg:mt-0">Book Online</a>
           </div>
         </div>
@@ -120,6 +123,29 @@ export default {
   .span-icon {
     top: 60px;
     left: calc(50%);
+  }
+
+  .block.band {
+    background: #fff;
+
+    a.block {
+      color: #6574cd;
+      &:hover {
+        color: grey;
+      }
+    }
+
+    .btn-book {
+      background-color: #6574cd;
+      border-color: #6574cd;
+      color: #fff;
+      margin-bottom: 2px;
+      transition: all .3s linear;
+
+      &:hover {
+        color: #6574cd;
+      }
+    }
   }
 }
 </style>

@@ -15,7 +15,7 @@
     <training/>
     <contact/>
     <BackTop>
-      <div class="bg-indigo rounded text-center text-white">
+      <div class="bg-grey-darkest rounded text-center font-indigo md:text-white">
         <i class="zmdi zmdi-long-arrow-up"></i>
       </div>
     </BackTop>
