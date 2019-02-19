@@ -1,5 +1,5 @@
 <template>
-  <div class="service bg-indigo-lightest">
+  <div id="service" class="service bg-indigo-lightest">
     <h1 class="title text-xl text-indigo hover:text-indigo-dark text-center py-8">Our Services</h1>
     <div class="container mx-auto flex content-start flex-wrap pb-8">
       <div v-for="(service, index) in services" :key="index"

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white flex flex-col sm:flex-col md:flex-row">
+  <div id="contact" class="bg-white flex flex-col sm:flex-col md:flex-row">
     <div class="bg-transparent p-5 bg-white w-full sm:w-100 md:w-2/3 border-r-2">
       <div class="mx-4">
         <div class="w-full md:w-2/3 flex flex-col justify-center content-center">
@@ -60,16 +60,16 @@
           </p>
         </div>
         <div class="flex justify-start items-center">
-          <a href="#" class="mr-3 bg-white rounded-full w-8 h-8 flex justify-center align-middle content-center">
+          <a :href="linkedin" target="_blank" class="mr-3 bg-white rounded-full w-8 h-8 flex justify-center align-middle content-center">
             <i class="block self-center la la-linkedin la-2x" aria-hidden="true"></i>
           </a>
-          <a href="#" class="mr-3 bg-white rounded-full w-8 h-8 flex justify-center align-middle content-center">
+          <a :href="facebook" target="_blank" class="mr-3 bg-white rounded-full w-8 h-8 flex justify-center align-middle content-center">
             <i class="block self-center la la-facebook-official la-2x" aria-hidden="true"></i>
           </a>
-          <a href="#" class="mr-3 bg-white rounded-full w-8 h-8 flex justify-center align-middle content-center">
+          <a :href="twitter" target="_blank" class="mr-3 bg-white rounded-full w-8 h-8 flex justify-center align-middle content-center">
             <i class="block self-center la la-twitter la-2x" aria-hidden="true"></i>
           </a>
-          <a href="#" class="bg-white rounded-full w-8 h-8 flex justify-center align-middle content-center">
+          <a :href="googlePlus" target="_blank" class="bg-white rounded-full w-8 h-8 flex justify-center align-middle content-center">
             <i class="block self-center la la-google-plus la-2x" aria-hidden="true"></i>
           </a>
         </div>
@@ -80,6 +80,26 @@
 
 <script>
 export default {
+  props: {
+    facebookUrl: String,
+    googlePlusUrl: String,
+    twitterUrl: String,
+    linkedinUrl: String
+  },
+  computed: {
+    facebook: function () {
+      return this.facebookUrl || '#'
+    },
+    twitter: function () {
+      return this.twitterUrl || '#'
+    },
+    googlePlus: function () {
+      return this.googlePlusUrl || '#'
+    },
+    linkedin: function () {
+      return this.linkedinUrl || '#'
+    }
+  },
   data () {
     return {
 

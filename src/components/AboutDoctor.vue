@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col-reverse sm:flex-row bg-white">
+  <div id="doctor" class="flex flex-col-reverse sm:flex-row bg-white">
     <div class="w-screen sm:w-1/2 md:w-1/2 p-8 text-center">
       <img
         class="rounded-sm w-72 h-64 shadow-lg"

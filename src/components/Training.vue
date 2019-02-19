@@ -1,5 +1,5 @@
 <template>
-  <div
+  <div id="training"
     class="training h-64 w-full bg-no-repeat bg-center">
     <div class="overlay w-full h-full flex flex-col items-center justify-center">
       <span class="block text-grey uppercase">Live Training</span>

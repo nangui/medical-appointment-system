@@ -13,7 +13,17 @@
     <about-doctor/>
     <testimonials/>
     <training/>
-    <contact/>
+    <contact
+      facebookUrl='https://www.facebook.com/adonai.nangui'
+      twitterUrl='https://twitter.com/NanguiAdonai'
+      linkedinUrl='https://www.linkedin.com/in/adonai-nangui/'
+      googlePlusUrl='https://plus.google.com/105894881863229439418?hl=fr'/>
+    <Footer
+      facebookUrl='https://www.facebook.com/adonai.nangui'
+      twitterUrl='https://twitter.com/NanguiAdonai'
+      linkedinUrl='https://www.linkedin.com/in/adonai-nangui/'
+      googlePlusUrl='https://plus.google.com/105894881863229439418?hl=fr'
+      authorName='Adonai Nangui'/>
     <BackTop>
       <div class="bg-grey-darkest rounded text-center font-indigo md:text-white">
         <i class="zmdi zmdi-long-arrow-up"></i>
@@ -35,6 +45,7 @@ import AboutDoctor from '@/components/AboutDoctor.vue'
 import Testimonials from '@/components/Testimonials.vue'
 import Training from '@/components/Training.vue'
 import Contact from '@/components/Contact.vue'
+import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'home',
@@ -50,7 +61,8 @@ export default {
     AboutDoctor,
     Testimonials,
     Training,
-    Contact
+    Contact,
+    Footer
   }
 }
 </script>

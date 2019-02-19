@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full md:px-24 sm:px-12 px-2 bg-indigo-lightest text-white pb-4">
+  <div id="testimonial" class="w-full md:px-24 sm:px-12 px-2 bg-indigo-lightest text-white pb-4">
     <h1 class="title text-xl text-indigo hover:text-indigo-dark text-center pt-8">Testimonials</h1>
     <swiper :options="swiperOption">
       <!-- slides -->

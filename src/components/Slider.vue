@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full md:px-24 sm:px-12 px-2 bg-black text-white py-4">
+  <div id="slider" class="w-full md:px-24 sm:px-12 px-2 bg-black text-white py-4">
     <swiper :options="swiperOption" ref="mySwiper" @someSwiperEvent="callback">
       <!-- slides -->
       <swiper-slide>

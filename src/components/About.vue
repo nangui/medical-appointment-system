@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div id="about-us" class="about">
     <h1 class="title text-xl text-indigo hover:text-indigo-dark text-center py-8">About us</h1>
     <div class="container mx-auto px-6 pb-8">
       Lorem ipsum dolor sit amet, vix eu salutatus contentiones. Ei nam augue fabellas deseruisse,
